@@ -1,1 +1,1 @@
-# NotasUCApp
+# App de notas curriculares
