@@ -12,6 +12,7 @@
         android:id="@+id/tituloMain"
         android:layout_width="296dp"
         android:layout_height="53dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="casual"
         android:text="   Notas Curriculares"
         android:textAlignment="textStart"
@@ -19,26 +20,35 @@
         android:textColorHint="#090909"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/notasvista"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <ListView
         android:id="@+id/notasvista"
-        android:layout_width="409dp"
-        android:layout_height="816dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="74dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="61dp"
         android:layout_height="77dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         app:layout_constraintStart_toEndOf="@+id/tituloMain"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

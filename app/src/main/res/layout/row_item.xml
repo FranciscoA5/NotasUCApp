@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonConstrain"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -10,9 +11,9 @@
         android:layout_width="66dp"
         android:layout_height="69dp"
         app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="-1dp" />
 
     <TextView
         android:id="@+id/gradeView"
@@ -25,7 +26,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,14 +64,15 @@
 
     <TextView
         android:id="@+id/cursoView"
-        android:layout_width="241dp"
-        android:layout_height="22dp"
+        android:layout_width="219dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="60dp"
         android:fontFamily="casual"
         android:text="TextView"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        tools:layout_editor_absoluteX="115dp" />
+        app:layout_constraintVertical_bias="0.489" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
